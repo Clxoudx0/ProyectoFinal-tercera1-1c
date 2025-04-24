@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mi Sitio de Madera</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="main.css" />
+
+  <style>
+    .custom-toggler {
+      border: none;
+      background-color: transparent;
+    }
+
+    .custom-toggler .navbar-toggler-icon {
+      background-image: url("img/hamicon1.png");
+      background-size: cover;
+      width: 30px;
+      height: 30px;
+    }
+
+    #navbarNav {
+      position: absolute;
+      top: 70px;
+      right: 20px;
+      background-color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      z-index: 1000;
+      width: fit-content;
+    }
+
+    #navbarNav .nav-link {
+      color: #000 !important;
+      font-weight: bold;
+    }
+
+    .slogan {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 1.25rem;
+      font-style: italic;
+      color: #fff;
+    }
+
+    #carousel-destacados {
+      max-width: 1000px;
+      margin: 60px auto;
+    }
+
+    #carousel-destacados img {
+      max-height: 500px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .carousel-caption h5 {
+      font-size: 1.5rem;
+      color: #ffc107;
+    }
+
+    .carousel-caption p {
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <!-- Header -->
+    <header class="d-flex align-items-center justify-content-between custom-header px-4 py-3">
+      <div class="d-flex align-items-center">
+        <a href="index.html">
+          <img src="img/logo1.png" alt="Logo" class="logo me-3" />
+        </a>
+        <nav class="d-flex">
+          <a id="servicios-link" class="nav-link text-white" href="servicios.html">Servicios</a>
+          <a id="promociones-link" class="nav-link text-white" href="promociones.html">Productos Destacados</a>
+        </nav>
+      </div>
+      <div class="d-flex align-items-center">
+        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="dropdown ms-3">
+          <img src="img/cuenta1.jpg" alt="Cuenta" class="cuenta-icono dropdown-toggle" id="dropdownCuenta" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="cursor: pointer;" />
+          <ul class="dropdown-menu dropdown-menu-end text-center p-3 bg-dark text-white" aria-labelledby="dropdownCuenta" id="menuCuenta">
+          </ul>
+        </div>
+
+        <span id="language-switch" class="language-switch me-3" onclick="changeLanguage()" style="cursor: pointer;">ES | EN</span>
+      </div>
+    </header>
+
+    
+    <div class="collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="comprar.html">¿Cómo comprar?</a></li>
+        <li class="nav-item"><a class="nav-link" href="formaspago.html">Formas de pago</a></li>
+        <li class="nav-item"><a class="nav-link" href="envios.html">Envíos</a></li>
+        <li class="nav-item"><a class="nav-link" href="soporte.html">Soporte técnico</a></li>
+        <li class="nav-item"><a class="nav-link" href="devoluciones.html">Reclamos y devoluciones</a></li>
+      </ul>
+    </div>
+
+    
+    <main class="contenido-principal">
+      <div class="category-buttons">
+        <a href="maderas.html" class="btn btn-outline-light">Maderas</a>
+        <a href="muebles.html" class="btn btn-outline-light">Muebles</a>
+        <a href="techos.html" class="btn btn-outline-light">Techos</a>
+        <a href="hogar.html" class="btn btn-outline-light">Hogar</a>
+        <a href="herramientas.html" class="btn btn-outline-light">Herramientas</a>
+      </div>
+
+      <div class="slogan">
+        "Transformamos madera en bienestar, cuidando tu hogar y el planeta."
+      </div>
+
+      
+      <section id="carousel-destacados" class="container my-5">
+        <h2 class="text-center text-white mb-4">Productos Destacados</h2>
+        <div id="carouselProductos" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+
+            
+            <div class="carousel-item active">
+              <img src="img/silla1.jpg" class="d-block w-100" alt="Producto destacado 1">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-3">
+                <h5>Silla Rústica</h5>
+                <p>₡25,000 - Comodidad y estilo natural para tu hogar.</p>
+              </div>
+            </div>
+
+            
+            <div class="carousel-item">
+              <img src="img/techopino1.jpg" class="d-block w-100" alt="Producto destacado 2">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-3">
+                <h5>Techo de Pino</h5>
+                <p>₡18,000/m² - Ideal para exteriores con toque clásico.</p>
+              </div>
+            </div>
+
+            
+            <div class="carousel-item">
+              <img src="img/sierra1.png" class="d-block w-100" alt="Producto destacado 3">
+              <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-3">
+                <h5>Sierra Circular</h5>
+                <p>₡40,000 - Potencia y precisión para tus proyectos.</p>
+              </div>
+            </div>
+
+          </div>
+
+          
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselProductos" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselProductos" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-white text-center mt-5 p-4 bg-dark">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-12">
+            <h2 style="font-size: 2rem; font-weight: bold;">Maderya</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <h5>Contacto</h5>
+            <p>Teléfono: <strong>7051-8265</strong></p>
+            <p>Email: <strong>andresbenavidesj@gmail.com</strong></p>
+          </div>
+          <div class="col-md-6">
+            <h5>Redes Sociales</h5>
+            <p>Síguenos en Instagram y Twitter para conocer más sobre nuestras novedades.</p>
+            <p>Instagram | Twitter</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div> 
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="accordion.js"></script>
+  <script src="language.js"></script>
+
+  <script>
+    const menuCuenta = document.getElementById("menuCuenta");
+
+    function renderizarMenu() {
+      const usuario = localStorage.getItem("usuario");
+      if (usuario) {
+        menuCuenta.innerHTML = ` 
+          <li><strong>¡Hola, ${usuario}!</strong></li>
+          <li><button class="btn btn-outline-light mt-2" onclick="cerrarSesion()">Cerrar sesión</button></li>
+        `;
+      } else {
+        menuCuenta.innerHTML = ` 
+          <form id="formLogin" onsubmit="iniciarSesion(event)">
+            <input type="text" id="loginUsuario" class="form-control mb-2" placeholder="Usuario" required />
+            <input type="password" id="loginClave" class="form-control mb-2" placeholder="Contraseña" required />
+            <button type="submit" class="btn btn-outline-light w-100">Iniciar sesión</button>
+          </form>
+          <div id="errorLogin" class="text-danger mt-2" style="font-size: 0.9em;"></div>
+        `;
+      }
+    }
+
+    function iniciarSesion(e) {
+      e.preventDefault();
+      const user = document.getElementById("loginUsuario").value.trim();
+      const pass = document.getElementById("loginClave").value.trim();
+
+      const usuarios = {
+        admin: "1234",
+        Andres: "0205",
+        Guest: "0000"
+      };
+
+      if (usuarios[user] && usuarios[user] === pass) {
+        localStorage.setItem("usuario", user);
+        location.reload();
+      } else {
+        document.getElementById("errorLogin").textContent = "Usuario o contraseña incorrectos.";
+      }
+    }
+
+    function cerrarSesion() {
+      localStorage.removeItem("usuario");
+      location.reload();
+    }
+
+    renderizarMenu();
+  </script>
+</body>
+</html>

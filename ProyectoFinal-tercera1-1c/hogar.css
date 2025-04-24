@@ -1,0 +1,134 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #4b2221; 
+    color: #fff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.hogar-container {
+    padding: 40px 20px;
+    min-height: calc(100vh - 160px); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.hogar-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.hogar-container p {
+    text-align: center;
+    margin-bottom: 40px;
+    max-width: 800px;
+}
+
+
+.hogar-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 60px;
+}
+
+
+.hogar-card {
+    background-color: #424242;
+    border: 1px solid #444;
+    color: #fff;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.hogar-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+.hogar-card img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+
+.hogar-card .card-body {
+    padding: 15px;
+    background-color: #333;
+    border-radius: 8px;
+}
+
+.hogar-card .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.hogar-card .precio {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #ffc107;
+}
+
+
+.hogar-card .card-text {
+    font-size: 0.95rem;
+    color: #ddd;
+    margin-top: 10px;
+    display: none;
+    background-color: #555;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.hogar-card .ver-mas {
+    background-color: #ffc107;
+    color: #333;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.hogar-card:hover .card-title {
+    color: #ffc107;
+}
+
+.hogar-card:hover .card-text {
+    color: #fff;
+}
+
+
+@media (max-width: 576px) {
+    .hogar-container {
+        padding: 20px 10px;
+    }
+
+    .hogar-card img {
+        height: 160px;
+    }
+}
+
+
+.hogar-page footer {
+    display: none;
+}
