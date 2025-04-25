@@ -3,7 +3,7 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #4b2221; /* Café oscuro */
+    background-color: #4b2221; 
     color: #fff;
     font-family: Arial, sans-serif;
     display: flex;
@@ -70,7 +70,7 @@ html, body {
     background-color: #8B4513; 
 }
 
-/* Contenido principal */
+
 .contenido-principal {
     flex: 1;
     padding-bottom: 120px; 
@@ -134,13 +134,13 @@ footer div {
     margin-bottom: 10px;
 }
 
-/* Ícono de cuenta */
+
 .cuenta-icono {
     width: 25px;
     height: auto;
 }
 
-/* Estilo para las cards de servicios */
+
 .card-servicio {
     background-color: #333;
     color: #fff;
@@ -246,7 +246,7 @@ footer .dropdown-menu {
     object-position: center;
 }
 
-/* Indicadores del carrusel */
+
 .carousel-indicators [data-bs-target] {
     background-color: #fff;
     width: 12px;
@@ -261,7 +261,7 @@ footer .dropdown-menu {
     border-radius: 50%;
 }
 
-/* Animación suave al cambiar imágenes */
+
 .carousel-item {
     transition: transform 0.8s ease-in-out;
 }
